@@ -23,7 +23,7 @@ status = "Enabled"
 }
 }
 
-terrform {
+terraform {
 backend "s3"{
 bucket = "chinnu.devops.project.bucket"
 key = "prod/terraform.tfstate"
