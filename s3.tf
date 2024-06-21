@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "daksh.devops.project.bucket"
+  bucket = "dakshith.devops.project.bucket"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
@@ -22,13 +22,7 @@ versioning_configuration {
 status = "Enabled"
 }
 }
-terraform {
-backend "s3"{
-bucket = "daksh.devops.project.bucket"
-key = "prod/terraform.tfstate"
-region = "us-east-1"
-}
-}
+
 
 
 
