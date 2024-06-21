@@ -23,6 +23,14 @@ status = "Enabled"
 }
 }
 
+terrform {
+backend "s3"{
+bucket = "chinnu.devops.project.bucket"
+key = "prod/terraform.tfstate"
+region = "us-east-1"
+}
+}
+
 
 
 
